@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Seattle Places</string>
+    <string name="cd_search">Search</string>
+    <string name="no_data_found">No data found.</string>
+    <string name="cd_icon">Icon</string>
+    <string name="cd_favorite">Favorite</string>
+    <string name="rating">Rating :</string>
+    <string name="search_seattle_places">Search Seattle Places</string>
+    <string name="find_your_favorite_places">Find your favorite places in Seattle!</string>
+</resources>

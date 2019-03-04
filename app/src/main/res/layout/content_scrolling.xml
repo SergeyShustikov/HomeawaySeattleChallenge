@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="horizontal"
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:baselineAligned="false">
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <ImageView android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       android:scaleType="center"
+                       android:id="@+id/place_icon" android:contentDescription="@string/cd_icon"/>
+            <TextView
+                    android:id="@+id/place_name"
+                    android:layout_marginStart="8sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="8sp"/>
+            <TextView
+                    android:id="@+id/place_price_type"
+                    android:layout_marginStart="8sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="8sp" android:gravity="right"
+                    tools:ignore="RtlHardcoded"/>
+            <TextView
+                    android:id="@+id/place_currency"
+                    android:layout_marginStart="8sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="8sp"/>
+        </LinearLayout>
+
+
+        <TextView
+                android:id="@+id/place_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        />
+
+        <TextView
+                android:id="@+id/place_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+        />
+        <TextView
+                android:id="@+id/place_address"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView
+                    android:id="@+id/website"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+            />
+            <TextView
+                    android:id="@+id/shortUrl"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RtlHardcoded"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/rating"
+                    android:text="@string/rating"
+                    android:layout_weight="2"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            />
+            <ProgressBar
+                    android:layout_gravity="center"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/place_rating"
+                    android:layout_weight="1"/>
+            <TextView
+                    android:id="@+id/place_rating_value"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout android:layout_margin="12dp" android:layout_width="32dp" android:layout_height="match_parent"
+                  android:orientation="vertical">
+        <ImageView android:id="@+id/place_like"
+                   android:layout_width="32dp" android:layout_height="32dp"
+                   android:src="@drawable/ic_not_liked" android:scaleType="fitXY"
+                   android:contentDescription="@string/cd_favorite"/>
+        <TextView android:id="@+id/place_likes"
+                  android:textColor="@android:color/black"
+                  android:layout_width="32dp" android:layout_height="32dp"
+                  android:gravity="center" android:textSize="20sp"/>
+    </LinearLayout>
+
+</LinearLayout>
